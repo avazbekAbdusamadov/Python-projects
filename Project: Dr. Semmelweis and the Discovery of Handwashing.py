@@ -1,14 +1,13 @@
 # Importing modules
 import pandas as pd
-# ... YOUR CODE FOR TASK 1 ...
 
 # Read datasets/yearly_deaths_by_clinic.csv into yearly
 yearly =pd.read_csv('datasets/yearly_deaths_by_clinic.csv')
 
 # Print out yearly
 print(yearly)
+
 # Calculate proportion of deaths per no. births
-# ... YOUR CODE FOR TASK 2 ...
 yearly['proportion_deaths']=yearly['deaths']/yearly['births']
 # Extract Clinic 1 data into clinic_1 and Clinic 2 data into clinic_2
 clinic_1 =yearly.loc[yearly['clinic']=='clinic 1']
